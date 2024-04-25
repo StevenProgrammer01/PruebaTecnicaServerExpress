@@ -60,10 +60,10 @@ export const getUsersById = async(req, res)=>{
     
 export const updateUser = async(req, res)=>{
     const updatedUser = await User.findByIdAndUpdate(req.params.userID, req.body, {new:true});
-    res.json(updatedUser)
+    res.json({message:"User updated"})
 
 }
 export const deleteUser = async(req, res)=>{
     const deletedUser = await User.findByIdAndDelete(req.params.userID);
-    res.json(deletedUser)
+    res.json({message:"User deleted"})
 }
