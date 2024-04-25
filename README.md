@@ -14,3 +14,13 @@ El programa requiere del uso de las dependencias de:
 "morgan": "^1.10.0"
 
 Además de tener instalado el gestor de base de datos MongoDB
+
+# Notas
+
+Este proyecto fue desarrollado sin uso de ninguna interfaz gráfica para el login.
+#
+Esta modulado siguiendo los estádares generales encontrados
+#
+Dentro de la carpeta routes se encuentran los nombres de las rutas a utilizar
+#
+Al principio se planteó el uso de un SignUp. Más esto iba a en contra de los requerimientos pues el único que puede crear nuevos registros es el rol admin
