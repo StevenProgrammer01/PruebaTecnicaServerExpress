@@ -1,12 +1,13 @@
 import {Schema,model}from "mongoose"
 import bcrypt from "bcryptjs"
 const userSchema = Schema({
-    username:{
+    nombre:{
         type:String,
         required:true,
         unique:true
     },
-    email:{
+    apellidos:{type:String},
+    correo:{
         type:String,
         required:true,
         unique:true
@@ -15,11 +16,11 @@ const userSchema = Schema({
         type:String,
         required:true
     },
-    roles:[{
-        ref : "Role",
-        type:Schema.Types.ObjectId
-    }]
-},{
+    telefono:{type:String},
+    rol:{ 
+        ref:"Role",
+        type:String
+    }},{
     timestamps:true,
     versionKey:false
 })
